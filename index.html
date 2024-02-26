@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&    display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar show-menu">
+        <div class="header ">
+            <h1 class="logo"><a class="n" href="index.html">Brew <span>Haven.</span></a></h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Produtos</li>
+                    <li>Sobre</li>
+                    <li>Contato</li>
+                    <li><a href="login.html">Login</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <img src="imagens/cart.png">
+                <img class="menu" src="imagens/menu.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="header-content">
+        <div class="side">
+            <div class="side-left">
+                <h2>No coração do Brew Haven está a busca incessante pela qualidade.</h2>
+                <p> Selecionamos cuidadosamente grãos de café provenientes de regiões renomadas, garantindo uma experiência única em cada gole. Nossos baristas são verdadeiros artistas, dedicados a criar obras-primas em cada xícara, desde o clássico espresso até as criações mais ousadas.</p>
+                <button>Degustar a parada &#8594</button>
+                
+            </div>
+            <div class="side-right">
+                <img src="imagens/mocapog.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <main class="m">
+        <div class="main">
+            <h3 class="titulo">Produtos altamente recomendados</h3>
+            <div class="subtitulo"></div>
+            <div class="colunas col-4">
+                <div class="produtos">
+                    <img src="imagens/produto1.jpg" alt="">
+                    <p class="nomeprodutos">Tonka Latte</p>
+                    <p class="preco">12.4</p>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/produto2.jpg" alt="">
+                    <p class="nomeprodutos">Chai Iced Latte</p>
+                    <p class="preco">14.6</p>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/produto3.jpg" alt="">
+                    <p class="nomeprodutos">Chai Latte</p>
+                    <p class="preco">11.2</p>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/produto4.jpg" alt="">
+                    <p class="nomeprodutos">Iced Black</p>
+                    <p class="preco">9.5</p>
+                </div>
+            </div>
+            <div class="colunas col-4 me">
+                <div class="produtos">
+                    <img src="imagens/produto1.jpg" alt="">
+                    <p class="nomeprodutos">Tonka Latte</p>
+                    <p class="preco">12.4</p>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/produto2.jpg" alt="">
+                    <p class="nomeprodutos">Chai Iced Latte</p>
+                    <p class="preco">14.6</p>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/produto3.jpg" alt="">
+                    <p class="nomeprodutos">Chai Latte</p>
+                    <p class="preco">11.2</p>
+                </div>
+                <div class="produtos">
+                    <img src="imagens/produto4.jpg" alt="">
+                    <p class="nomeprodutos">Iced Black</p>
+                    <p class="preco">9.5</p>
+                </div>
+            </div>
+    </main>
+
+    <div class="i"></div>
+
+    <footer>
+        <div class="footer">
+            <h1 class="logo"><a class="n" href="index.html">Brew <span>Haven.</span></a></h1>
+            
+        </div>
+        <hr>
+           <ul>
+                <li>Sobre nós</li>
+                <li>Políticas</li>
+                <li>Fale conosco</li>
+                <li><a href="login.html">Cadastre-se</a></li>
+            </ul> 
+    </footer>
+
+    <script>
+        const navbar = document.querySelector(".navbar");
+        const menuButton = document.querySelector(".menu");
+
+    menuButton.addEventListener("click", () => {
+        navbar.classList.toggle("show-menu");
+    });
+    </script>
+</body>
+</html>

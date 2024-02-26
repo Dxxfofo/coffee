@@ -1,0 +1,327 @@
+:root {
+    --marrom: #5f3d2b;
+
+    --marromclaro:#754739;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: var(--marrom);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.n{
+    color: chocolate;
+}
+
+.logo{
+    color: chocolate;
+}
+
+h2{
+    color: #764538;
+}
+
+p{
+    color: #764538;
+}
+
+span{
+    color: #fff;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+img{
+    width: 30px;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+li{
+    color: #fff;
+    margin-right: 1.5rem;
+    cursor: pointer;
+}
+
+li:hover{
+    transform: translateY(-5px);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.navbar{
+    background-color: #2c2c2c;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 10px 0px 10px #2c2c2c;
+}
+
+.navbar>div{
+    
+}
+
+.header{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu{
+    display: none;
+}
+
+.page {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    color: #76453b;
+    background: white;
+    font-family: "lato", sans-serif;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    font-weight: 100;
+    padding: 150px;
+        box-shadow: 5px 5px 15px 5px #3d241c;
+
+}
+.page a{
+    color: var(--marrom);
+    width: 60px;
+    font-size: 50px;
+    transition: all 0.1s ease-out 0s;
+
+
+
+}
+.page a:hover {
+    color: white;
+    -webkit-text-stroke:3px
+    var(--marrom);
+}
+.titulopage {
+    font-size: 30px;
+
+}
+
+
+.titulo {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+
+.formcontainerlogin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+
+.formbox {
+    display: flex;
+    justify-content: center;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    flex-direction: column;
+    color: #764538;
+    border: 1px solid #ffffff;
+    border-radius: 45px;
+    padding: 45px;
+    background: radial-gradient(circle at 180%, #793535, #ffffff);
+    border: 1px solid var(--marrom);
+    box-shadow: 5px 5px 15px 5px #311d17;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.forminputs {
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #764538;
+    margin-bottom: 10px;
+    color: var(--marrom);
+}
+
+.forminputs {
+    width: 400px;
+}
+
+#usericon{
+    margin-left: 5px;
+    font-size: 18px;
+}
+
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+
+.entrar {
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: var(--marrom)   ;
+    border: 1px solid #764538;
+    border-radius: 20px;
+    transition: all 0.1s ease-out 0s;
+    padding: 8px;
+    width: 200px;
+   cursor: pointer;
+    position: relative;
+    left: 100px;
+    top: 20px;
+    font-family: "Zen Kaku Gothic Antique", sans-serif;
+    font-weight: 500;
+
+}
+
+.manteracesso label{
+    margin-left: 8px;
+}
+
+
+#naotem{
+    font-size: 13px;
+}
+
+
+.entrar:hover {
+    color: var(--marrom);
+    background: transparent;
+}
+
+.formbox p,
+a {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.formbox a{
+    color: var(--marrom);
+    font-weight: 700;
+
+
+    text-decoration: underline 1px;
+   
+}
+.formbox a:hover{
+    text-decoration: none;
+    border-bottom: 1px solid var(--marrom);
+}
+
+footer{
+    background-color: #2c2c2c;
+    box-shadow: 10px 0px 10px #2c2c2c;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.footer h1{
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+footer li{
+    margin-bottom: 50px;
+}
+
+hr{
+    width: 500px;
+    margin: 0;
+    padding: 0;
+    margin-top: -30px;
+}
+
+@media(max-width: 800px){
+    .side{
+        flex-direction: column;
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+    .side-right{
+        margin-top: 30px;
+    }
+
+    .show-menu nav{
+        display: block;
+    }
+
+    .menu{
+        display: block;
+    }
+
+    nav{
+        position: absolute;
+        background-color: #2c2c2c;
+        width: 97%;
+        top: 89px;
+        display: none;
+        padding-bottom: 10px;
+        border-radius: 10px;
+    }
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    nav ul li{
+        text-align: center;
+        padding: 0.8rem;
+    }
+}
